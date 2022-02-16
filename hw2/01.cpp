@@ -18,7 +18,10 @@ int main()
     int k = 0;
     for(int it : temparature) k += it > avg;
     cout << k << endl;
-    for(int it : temparature) if(it > avg) cout << it << " ";
+    for(int i = 0; i < n; i++) {
+        if(temparature[i] > avg) 
+            cout << i << " ";
+    }
     cout << endl;
     return 0;
 }
